@@ -1,13 +1,13 @@
-# 🧠 TF-IDF Similarity Grouper API
+# TF-IDF Similarity Grouper API
 
 A FastAPI backend that allows users to upload documents (TXT), extracts and stores their content in memory, and provides two powerful features:
 
-* 🔍 **Search**: Query the content using TF-IDF + cosine similarity.
-* 🧩 **Grouping**: Cluster similar chunks of text from the uploaded document.
+*  **Search**: Query the content using TF-IDF + cosine similarity.
+* **Grouping**: Cluster similar chunks of text from the uploaded document.
 
 ---
 
-## 🚀 Features
+##  Features
 
 * Accepts `.txt` files for now 
 * Automatically extracts and splits content into chunks
@@ -17,7 +17,7 @@ A FastAPI backend that allows users to upload documents (TXT), extracts and stor
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 similarity_app/
@@ -35,7 +35,7 @@ similarity_app/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 git clone https://github.com/obirikan/TF-IDF-Similarity-Grouper-API.git
@@ -47,7 +47,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the App
+## Running the App
 
 ```bash
 uvicorn app.main:app --reload
@@ -58,7 +58,7 @@ uvicorn app.main:app --reload
 
 ---
 
-## 📤 Upload Endpoint
+## Upload Endpoint
 
 **POST** `/upload`
 
@@ -90,7 +90,7 @@ curl -X POST "http://localhost:8000/upload" \
 
 ---
 
-## 🔍 Search Endpoint
+## Search Endpoint
 
 **GET** `/search?q=your+query`
 
@@ -115,7 +115,7 @@ curl "http://localhost:8000/search?q=machine+learning"
 
 ---
 
-## 🧪 File Handling Rules
+## File Handling Rules
 
 | File Type | How It's Processed                   |
 | --------- | ------------------------------------ |
@@ -123,7 +123,7 @@ curl "http://localhost:8000/search?q=machine+learning"
 
 ---
 
-## 📚 Use Cases
+##  Use Cases
 
 * Research tool
 * Literature reviews
@@ -132,7 +132,7 @@ curl "http://localhost:8000/search?q=machine+learning"
 
 ---
 
-## 🧰 Built With
+## Built With
 
 * [FastAPI](https://fastapi.tiangolo.com/)
 * [scikit-learn](https://scikit-learn.org/)
@@ -142,7 +142,7 @@ curl "http://localhost:8000/search?q=machine+learning"
 
 ---
 
-## 🔮 Coming Soon
+##  Coming Soon
 
 * [ ] Redis caching with Upstash
 * [ ] Persistent file storage
@@ -151,6 +151,6 @@ curl "http://localhost:8000/search?q=machine+learning"
 
 ---
 
-## 📝 License
+## License
 
 MIT © 2025
