@@ -1,6 +1,6 @@
 # 🧠 TF-IDF Similarity Grouper API
 
-A FastAPI backend that allows users to upload documents (PDF, CSV, TXT), extracts and stores their content in memory, and provides two powerful features:
+A FastAPI backend that allows users to upload documents (TXT), extracts and stores their content in memory, and provides two powerful features:
 
 * 🔍 **Search**: Query the content using TF-IDF + cosine similarity.
 * 🧩 **Grouping**: Cluster similar chunks of text from the uploaded document.
@@ -9,7 +9,7 @@ A FastAPI backend that allows users to upload documents (PDF, CSV, TXT), extract
 
 ## 🚀 Features
 
-* Accepts `.pdf`, `.csv`, and `.txt` files
+* Accepts `.txt` files for now 
 * Automatically extracts and splits content into chunks
 * Groups similar text entries using cosine similarity
 * Searches content based on TF-IDF relevance
@@ -38,7 +38,7 @@ similarity_app/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/similarity-app.git
+git clone https://github.com/obirikan/TF-IDF-Similarity-Grouper-API.git
 cd similarity-app
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
@@ -119,8 +119,6 @@ curl "http://localhost:8000/search?q=machine+learning"
 
 | File Type | How It's Processed                   |
 | --------- | ------------------------------------ |
-| `.pdf`    | Paragraphs per page using PyMuPDF    |
-| `.csv`    | Rows combined as strings with pandas |
 | `.txt`    | Paragraphs split by double newlines  |
 
 ---
