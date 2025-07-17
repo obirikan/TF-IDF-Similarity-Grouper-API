@@ -125,7 +125,7 @@ curl "http://localhost:8000/search?q=machine+learning"
 
 ## 📚 Use Cases
 
-* Research tools
+* Research tool
 * Literature reviews
 * Text similarity checks
 * Auto-clustering content
